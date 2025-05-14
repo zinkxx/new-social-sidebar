@@ -1,0 +1,53 @@
+/* Sidebar */
+.sm-sidebar {
+    position: fixed;
+    top: 20%;
+    z-index: 9999;
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column; /* Logoları dikey sıralamak için */
+    align-items: center; /* Logoları ortalamak için */
+}
+
+.sm-sidebar.sm-left {
+    left: 10px;
+}
+
+.sm-sidebar.sm-right {
+    right: 10px;
+}
+
+.sm-sidebar.sm-bottom {
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.sm-icon {
+    display: block; /* Blok eleman yapıyoruz ki alt alta gelsin */
+    width: 40px;
+    height: 40px;
+    margin: 5px 0; /* Her logo arasında dikey boşluk */
+    background-size: cover;
+    background-position: center;
+}
+
+.sm-facebook { background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a7/Facebook_icon.svg'); }
+.sm-twitter { background-image: url('https://upload.wikimedia.org/wikipedia/en/6/60/Twitter_Logo_as_of_2021.svg'); }
+.sm-instagram { background-image: url('https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png'); }
+.sm-linkedin { background-image: url('https://upload.wikimedia.org/wikipedia/commons/0/01/LinkedIn_Logo_2013_2019.svg'); }
+.sm-youtube { background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/YouTube_icon_%282013-2017%29.png'); }
+
+/* Karanlık Mod */
+.sm-dark {
+    background-color: #333;
+    color: #fff;
+}
+
+.sm-dark .sm-icon {
+    border: 2px solid #fff;
+}
+
